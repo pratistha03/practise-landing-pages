@@ -9,14 +9,20 @@
     padding: auto;
     /* height: 450x; */
     border-radius: 10px;
-    width: 600px;
+    width: 60%;
     background-color: whitesmoke;
 }
 table{
     border-collapse: collapse;
+    width: 100%;
 }
+
 .join {
     padding: 12px 0 10px 30px;
+}
+.bottomhalf{
+    display: inline-flex;
+    
 }
 .subscription{
     background-color: rgb(81, 180, 187);
@@ -27,7 +33,7 @@ table{
     background-color: rgb(76, 211, 221);
 }
 .subscription, .whyus{
-    width: 300px;
+    width:300px;
     padding-left: 30px;
     padding-bottom: 30px;
     border: collapse;
