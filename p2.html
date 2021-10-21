@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: cursive;
+        user-select: none;
+    }
+    .container{
+        height: 465px;
+        width: 665px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+    .header{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .midtop, .midbottom, .left, .right{
+        border: 1px solid black;
+        border-top: 3px solid rgb(231, 73, 52);
+        
+        border-radius:5px;
+        margin: 20px;
+        padding: 15px;
+        height: 100px;
+        width: 150px;      
+    }
+    .left, .right{
+        border-top: 3px solid rgb(70, 195, 245);
+        margin-top: 100px;        
+    }
+    h6{
+        margin-top: 7px;
+    }
+    .flexbox{
+        display: inline-flex;
+    }
+</style>
+<body> 
+    <div class="container">
+    <div class="header">
+        <h2 style="font-weight: lighter;">Reliable, efficent delivery</h2>
+        <h2>Powered by Technology</h2>
+        <h6>Our artificial intelligence powered tools use millions of project data <br> points to ensure that your project is successful</h6>
+     </div>   
+        <div class="flexbox">
+            <div class="left">
+                <h5>Supervisor</h5>
+                <h6>Monitors activity to identify project roadblocks</h6>
+            </div>
+            <div class="middle">
+                <div class="midtop"> 
+                    <h5>Team Bulider</h5>
+                    <h6>Scans our talent network to create the optimal team for your project</h6>
+                </div>
+                <div class="midbottom"> 
+                    <h5>Karma</h5>
+                    <h6>REgularly evaluates our talent to ensure quality</h6>
+                </div>
+            </div>
+            <div class="right">
+                <h5>calculator</h5>
+                <h6>Uses data from past projects to provide better delivery estimates</h6>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
