@@ -2,27 +2,30 @@
     vertical-align: middle;
     font-family: cursive;
     user-select: none;
+    color: whitesmoke;
 
 }
 .container{
     margin: auto;
     padding: auto;
-    /* height: 450x; */
     border-radius: 10px;
     width: 60%;
-    background-color: whitesmoke;
+    box-shadow:5px 5px 5px 5px lightgray;
+    
 }
 table{
     border-collapse: collapse;
-    width: 100%;
+    /* width: 650px; */
+}
+p{
+    color: lightgrey;
 }
 
 .join {
     padding: 12px 0 10px 30px;
 }
 .bottomhalf{
-    display: inline-flex;
-    
+    display:flex;    
 }
 .subscription{
     background-color: rgb(81, 180, 187);
@@ -32,12 +35,19 @@ table{
     border-bottom-right-radius: 10px;
     background-color: rgb(76, 211, 221);
 }
+
+@media screen and (max-width:375px) {
+    .subscription, .whyus {
+      width: 100% !important;
+    }
+  }
+
 .subscription, .whyus{
-    width:300px;
+    width:50%;
     padding-left: 30px;
     padding-bottom: 30px;
     border: collapse;
-    /* height: 190px; */
+    /* height: 120px; */
 }
 strong{
     font-size: 30px;
