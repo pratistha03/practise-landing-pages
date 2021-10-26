@@ -1,0 +1,66 @@
+<html></html>
+<head>
+   <title>prompt demo</title>
+   <style>
+      /* .highlight{
+         background-color:yellow;
+         max-width: fit-content;
+         display: inline;
+      } */
+      body{
+         display: block;
+      }
+      .container{
+         margin: auto;
+         margin-top: 50px;
+         text-align: center;
+         border: 3px solid red;
+         width: 200px;
+         padding: 0 10px;
+         /* for container to be vertically center */
+         /* position: absolute;
+         top: 50%;
+         transform: translate(0,-50%); */
+      }
+      button{
+         padding:2px 10px;
+         background-color: red;
+         color: white;
+         font-size: large;
+         border-radius: 5px;
+         width: 130px;
+         margin-bottom: 5px;
+      }
+      #savebtn{
+         background-color: aquamarine;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h1>People count:</h1>
+      <h2 id="countppl">0</h2>
+      <button id="btn" onclick="increase()">increment</button> <br>
+      <button id="savebtn" onclick="save()">save</button> <hr>
+      <h5 id="text"> Previous enteries: </h5>
+   </div>
+   <script> 
+      // replace the countppl when btn clicked
+         let a =document.getElementById("countppl");
+         let count=0;  
+      
+      function increase() {
+        count=count+1; 
+         a.innerHTML= count;
+      }
+      function save(){
+         let text= document.getElementById("text");
+         text.innerHTML += count+ " , ";
+         a.innerHTML=0;
+         count=0;
+      }
+   </script>
+
+   <!-- <script src="prompt.js"></script>  -->
+</body>
+</html>
