@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);        
+
+        .container{
+            user-select: none;
+            width: 750px;
+            height: auto;
+            border: 2px solid red;
+            background-image: url('images/bg-intro-desktop.png');
+            background-position: cover;
+            background-color:hsl(0, 100%, 74%)  ;
+            margin: auto;
+            display: flex;
+            font-family: Poppins;
+            padding: 60px 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+        }
+        h2{
+            line-height: 28px;
+        }
+        p{
+            font-size: 11px;
+        } 
+        .left{
+            padding-top: 100px;
+            width: 53%;
+        }
+        
+        .right{
+            text-align: center;
+            width: 47%;
+        }
+      .trial{
+            padding: 8px 20px;
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border-radius: 10px;
+            color: whitesmoke;
+            width: 100%;
+        }
+        
+        form{
+            background-color: white;
+            border-radius: 15px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+    
+        input{
+            font-size: 12px;
+            padding: 8px 16px;
+            width: 70%;
+            border-radius: 5px;
+        }
+        #claimbtn{
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: aqua;
+            font-size: 16px;
+            width: 80%;
+            margin-top: 15px;
+        }
+        .errorimg {
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            z-index: 2;
+            right:14%;
+            visibility:hidden ;
+        }
+        .text{
+            color: red;
+            font-style: italic;
+            font-size: 8px;
+            margin-top: 1px;
+            float: right;
+            margin-bottom: 5px;
+            padding-right: 40px;
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!-- <div class="content"> -->
+                <h2>Learn to code by <br> watching others</h2>
+                <p>See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, 
+                but understanding how <br> developers think is invaluable.</p>        
+            <!-- </div> -->
+        </div>
+
+        <div class="right">
+            <button class="trial" disabled="disabled" ><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+            <form action="#">
+                <input type="text" placeholder="First Name" id="fname" required>
+                <img src="images/icon-error.svg" id="fnameerrorimg" class="errorimg" style="top: 29%; visibility: hidden;" >  
+                <span id="fnameerror" class="text" >First name can't be empty.</span>
+                
+                <input type="text" placeholder="Last Name" id="lname" required>
+                <img src="images/icon-error.svg" id="lnameerrorimg" class="errorimg" style="top: 40%;">  
+                <span id="lnameerror" class="text">Last name can't be empty.</span>
+                
+                <input type="email" placeholder="Email Address" id="email" required>
+                <img src="images/icon-error.svg" id="emailerrorimg" class="errorimg" style="top: 51%;">  
+                <span id="emailerror" class="text">Invalid Email Address.</span>
+                
+                <input type="password" id="password" placeholder="Password" required>
+                <img src="images/icon-error.svg" id="pwerrorimg" class="errorimg" style="top: 62%;">  
+                <span id="pwerror" class="text">Password must be atleast  8 character long</span>
+                
+                <button type="submit" id="claimbtn" onclick="valid()"><strong> CLAIM YOUR FREE TRIAL</strong></button>
+                <p style="font-size: 6px;">By clicking the button, you are agreeing to our <a href="#" style="color: red; text-decoration: none;">Terms and Services</a></p>
+            </form>
+        </div>
+
+    </div>
+   <script src="p5.js"></script>    
+</body>
+</html>
