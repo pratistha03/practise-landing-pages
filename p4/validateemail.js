@@ -17,7 +17,7 @@ function valid(){
         form.classList.add("invalid");
         text.innerHTML="Please provide a valid email";
         errorImg.style.visibility = "visible";
-        text.style.color="#ff0000";
+        text.style.color="red";
     }
     if(email= ""){
         form.classList.remove("valid");
