@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.google.com/specimen/Montserrat:700 );
+        .container{
+            font-family: Montserrat;
+            background-color: red;
+            width: 750px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 10px 100px;
+            font-weight: bold ;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 27px;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+            transition: .4s;
+            }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: 3px;
+            transition: 3px;
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(21px);
+            -ms-transform: translateX(21px);
+            transform: translateX(21px);
+        }
+
+            /* Rounded sliders */
+        .slider {
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            border-radius: 50%;
+        }
+        .toggleswitch{
+            display: inline-flex;
+            background-color: aqua;
+           
+        }
+        .price{
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    
+        button{
+            height: 30px;
+            width: 100%;
+            border: none;
+            border-radius: 7px;
+            background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+
+        }
+        strong{
+            font-size: 38px;
+        }
+        button a{
+            text-decoration: none;
+            color: hsl(232, 13%, 33%);
+            font-weight: bold;
+        }
+        .professional{
+            background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+            border-radius: 10px;
+            width: 34%;
+            color:hsl(240, 78%, 98%);
+            padding: 30px 20px;
+
+        }
+        .basic{
+            margin-left: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .master{
+            margin-right: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .basic, .master{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 33%;
+            padding: 15px 25px;
+            background-color: white;
+            color:hsl(232, 13%, 33%);
+            box-shadow: 3px lightgray;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <h2 style="color:hsl(232, 13%, 33%);">Our pricing</h2>
+        <div class="toggleswitch">
+            <div><p>Anually</p></div>
+            <div><label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label></div>
+            <div><p>Monthly</p></div>
+        </div>
+        <div class="price">
+            <div class="basic">
+                <p>Basic</p>
+                <strong id="basicp">$19.99</strong> <hr>
+                <p>500 GB Storage <br><hr>
+                2 Users Allowed <br><hr>
+                Send up to 3 GB </p> <hr> <br>
+                <button><a href="#">LEARN MORE</a> </button>
+            </div>
+
+            <div class="professional">
+               <p> Professional</p>
+                <strong id="professionalp">$24.99</strong><hr>
+                <p>1 TB Storage <br><hr>
+                5 Users Allowed <br><hr>
+                Send up to 10 GB</p> <hr><br>
+                <button style="background: white;"><a href="#">LEARN MORE</a> </button>
+            </div>
+
+            <div class="master">
+                <p>Master</p>
+                <strong id="masterp">&dollar;39.99</strong><hr>
+                <p>2 TB Storage <br><hr>
+                10 Users Allowed <br><hr>
+                Send up to 20 GB</p> <hr><br>
+                <button><a href="#">LEARN MORE</a> </button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

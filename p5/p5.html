@@ -62,7 +62,7 @@
     
         input{
             font-size: 12px;
-            padding: 8px 16px;
+            padding: 10px 16px;
             width: 70%;
             border-radius: 5px;
         }
@@ -79,7 +79,7 @@
             height: 15px;
             width: 15px;
             z-index: 2;
-            right:14%;
+            right:13.5%;
             visibility:hidden ;
         }
         .text{
@@ -105,23 +105,23 @@
             <!-- </div> -->
         </div>
 
-        <div class="right">
+        <div class="right" >
             <button class="trial" disabled="disabled" ><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
-            <form action="#">
+            <form action="#" method="post">
                 <input type="text" placeholder="First Name" id="fname" required>
-                <img src="images/icon-error.svg" id="fnameerrorimg" class="errorimg" style="top: 29%; visibility: hidden;" >  
+                <img src="images/icon-error.svg" id="fnameerrorimg" class="errorimg" style="top: 28%;" >  
                 <span id="fnameerror" class="text" >First name can't be empty.</span>
                 
                 <input type="text" placeholder="Last Name" id="lname" required>
-                <img src="images/icon-error.svg" id="lnameerrorimg" class="errorimg" style="top: 40%;">  
+                <img src="images/icon-error.svg" id="lnameerrorimg" class="errorimg" style="top: 39%;">  
                 <span id="lnameerror" class="text">Last name can't be empty.</span>
                 
                 <input type="email" placeholder="Email Address" id="email" required>
-                <img src="images/icon-error.svg" id="emailerrorimg" class="errorimg" style="top: 51%;">  
+                <img src="images/icon-error.svg" id="emailerrorimg" class="errorimg" style="top: 50%;">  
                 <span id="emailerror" class="text">Invalid Email Address.</span>
                 
                 <input type="password" id="password" placeholder="Password" required>
-                <img src="images/icon-error.svg" id="pwerrorimg" class="errorimg" style="top: 62%;">  
+                <img src="images/icon-error.svg" id="pwerrorimg" class="errorimg" style="top: 61%;">  
                 <span id="pwerror" class="text">Password must be atleast  8 character long</span>
                 
                 <button type="submit" id="claimbtn" onclick="valid()"><strong> CLAIM YOUR FREE TRIAL</strong></button>
