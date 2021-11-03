@@ -1,0 +1,125 @@
+@import url(https://fonts.google.com/specimen/Montserrat:700 );
+.container{
+    font-family: Montserrat;
+    background-color: red;
+    width: 750px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 100px;
+    font-weight: bold ;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url('images/bg-top.svg'),url('images/bg-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 250px;
+    user-select: none;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    margin: 12px 15px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    transition: .4s;
+    }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: 3px;
+    transition: 3px;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+
+    /* Rounded sliders */
+.slider {
+    border-radius: 34px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+.switch:hover{
+    opacity: 0.6;
+}
+.toggleswitch{
+    display: inline-flex;
+    color:hsl(232, 13%, 33%);
+
+}
+.price{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+button{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+
+}
+button:hover{
+    opacity: 0.4;
+    border: 2px solid hsl(236, 72%, 79%);
+}
+strong{
+    font-size: 38px;
+}
+button a{
+    text-decoration: none;
+    color: hsl(232, 13%, 33%);
+    font-weight: bold;
+}
+.professional{
+    background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    border-radius: 10px;
+    width: 34%;
+    color:hsl(240, 78%, 98%);
+    padding: 30px 20px;
+
+}
+.basic{
+    margin-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.master{
+    margin-right: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.basic, .master{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 33%;
+    padding: 15px 25px;
+    background-color: white;
+    color:hsl(232, 13%, 33%);
+    box-shadow: 3px lightgray;
+}

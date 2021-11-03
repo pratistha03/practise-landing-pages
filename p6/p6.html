@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylep6.css">
+        
+</head>
+
+<body>
+    <div class="container">
+            <h2 style="color:hsl(232, 13%, 33%);">Our pricing</h2>
+         <div class="toggleswitch">
+            <div><p>Anually</p></div>
+            <div><label class="switch">
+                <input type="checkbox" onclick="toggle()" checked>
+                <span class="slider"></span>
+            </label></div>
+            <div><p>Monthly</p></div>
+        </div>
+        <div class="price">
+            <div class="basic">
+                <p>Basic</p>
+                <strong id="basicp">$19.99</strong> <hr>
+                <p>500 GB Storage <br><hr>
+                2 Users Allowed <br><hr>
+                Send up to 3 GB </p> <hr> <br>
+                <button><a href="#">LEARN MORE</a> </button>
+            </div>
+
+            <div class="professional">
+               <p> Professional</p>
+                <strong id="professionalp">$24.99</strong><hr>
+                <p>1 TB Storage <br><hr>
+                5 Users Allowed <br><hr>
+                Send up to 10 GB</p> <hr><br>
+                <button style="background: white;"><a href="#">LEARN MORE</a> </button>
+            </div>
+
+            <div class="master">
+                <p>Master</p>
+                <strong id="masterp">&dollar;39.99</strong><hr>
+                <p>2 TB Storage <br><hr>
+                10 Users Allowed <br><hr>
+                Send up to 20 GB</p> <hr><br>
+                <button><a href="#">LEARN MORE</a> </button>
+
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        function toggle() {
+            var basic=document.getElementById('basicp');
+            var professional=document.getElementById('professionalp');
+            var master=document.getElementById('masterp');
+
+            if(basic.innerText == "$19.99"){
+                basic.innerText="$199.99" ;
+                professional.innerText="$299.99" ;
+                master.innerText="$399.99" ;
+            }
+            else{
+                basic.innerText="$19.99" ;
+                professional.innerText="$29.99" ;
+                master.innerText="$39.99" ;
+            }
+        }
+
+    </script>
+</body>
+</html>
